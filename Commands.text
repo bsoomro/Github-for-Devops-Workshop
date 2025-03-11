@@ -1,0 +1,50 @@
+Command	Syntax	Example	Description
+git init	git init	git init my_project	Initializes a new Git repository in the current or specified directory.
+git clone	git clone <repo_URL>	git clone https://github.com/user/repo.git	Creates a local copy of a remote repository.
+git status	git status	git status	Shows the current status of the working directory and staging area.
+git add	git add <file>	git add index.html	Stages a specific file for the next commit.
+git add .	git add .	git add .	Stages all modified and new files for the next commit.
+git commit	git commit -m "message"	git commit -m "Initial commit"	Commits the staged changes with a descriptive message.
+git log	git log	git log --oneline	Displays commit history with details.
+git show	git show <commit_ID>	git show a1b2c3d	Shows details of a specific commit.
+2. Branching & Merging
+Command	Syntax	Example	Description
+git branch	git branch	git branch feature-branch	Lists all branches or creates a new one.
+git checkout	git checkout <branch_name>	git checkout main	Switches to the specified branch.
+git checkout -b	git checkout -b <branch_name>	git checkout -b dev-branch	Creates and switches to a new branch.
+git merge	git merge <branch_name>	git merge feature-branch	Merges the specified branch into the current branch.
+git branch -d	git branch -d <branch_name>	git branch -d feature-branch	Deletes a branch (if merged).
+git branch -D	git branch -D <branch_name>	git branch -D feature-branch	Force deletes a branch (even if not merged).
+3. Working with Remote Repositories
+Command	Syntax	Example	Description
+git remote -v	git remote -v	git remote -v	Lists remote repositories linked to the local repo.
+git remote add	git remote add origin <repo_URL>	git remote add origin https://github.com/user/repo.git	Links the local repository to a remote one.
+git push	git push origin <branch_name>	git push origin main	Pushes a branch to the remote repository.
+git push -u	git push -u origin <branch_name>	git push -u origin dev	Pushes and sets the upstream branch.
+git pull	git pull origin <branch_name>	git pull origin main	Fetches and merges changes from a remote branch.
+git fetch	git fetch origin	git fetch origin	Retrieves updates from the remote repo without merging.
+4. Undoing Changes
+Command	Syntax	Example	Description
+git reset	git reset <file>	git reset index.html	Unstages a file but keeps changes.
+git reset --hard	git reset --hard <commit_ID>	git reset --hard a1b2c3d	Resets the repository to a previous commit, deleting changes.
+git revert	git revert <commit_ID>	git revert a1b2c3d	Creates a new commit that undoes a specific commit.
+git stash	git stash	git stash	Temporarily stores uncommitted changes.
+git stash pop	git stash pop	git stash pop	Restores the most recent stashed changes.
+5. Tagging
+Command	Syntax	Example	Description
+git tag	git tag	git tag	Lists all tags in the repository.
+git tag <tag_name>	git tag v1.0	git tag v1.0	Creates a new tag at the current commit.
+git tag -a	git tag -a <tag_name> -m "message"	git tag -a v1.0 -m "Version 1.0 release"	Creates an annotated tag with a message.
+git push --tags	git push origin --tags	git push origin --tags	Pushes all local tags to the remote repository.
+6. Collaboration & Workflow
+Command	Syntax	Example	Description
+git config	git config --global user.name "Your Name"	git config --global user.name "Ali"	Sets the global Git username.
+git config	git config --global user.email "your@email.com"	git config --global user.email "ali@example.com"	Sets the global Git email.
+git rebase	git rebase <branch_name>	git rebase main	Reapplies commits from one branch on top of another.
+git cherry-pick	git cherry-pick <commit_ID>	git cherry-pick a1b2c3d	Applies a specific commit from one branch to another.
+This table provides a structured and detailed explanation of GitHub commands with syntax and examples. Let me know if you need further explanations or practical examples! 😊🚀
+
+
+
+
+
